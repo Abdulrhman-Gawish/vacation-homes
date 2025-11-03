@@ -1,6 +1,20 @@
 import styled from "styled-components";
-import { Button } from "antd";
+import { Button, Row, Col, Typography, Card as AntCard } from "antd";
+const { Title, Text, Paragraph } = Typography;
 
+
+
+
+export const HeroSection = styled.section`
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+`;
 export const BackgroundImage = styled.img`
   position: absolute;
   // inset: 0;
@@ -25,17 +39,6 @@ export const Overlay = styled.div`
     rgba(2, 6, 23, 0.9)
   );
   z-index: 1;
-`;
-
-export const HeroSection = styled.section`
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 60vh; 
 `;
 
 export const ContentWrapper = styled.div`
