@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
+    "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/vite": "^4.1.16",
     "antd": "^5.28.0",
+    "class-variance-authority": "^0.7.1",
+    "framer-motion": "^12.23.24",
     "lucide-react": "^0.552.0",
     "path": "^0.12.7",
     "prop-types": "^15.8.1",
@@ -20,6 +23,7 @@
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.5",
     "styled-components": "^6.1.19",
+    "tailwind-variants": "^3.1.1",
     "tailwindcss": "^4.1.16",
     "url": "^0.11.4"
   },
