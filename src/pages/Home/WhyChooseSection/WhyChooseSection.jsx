@@ -2,7 +2,6 @@ import { Row, Col, Typography } from "antd";
 const { Text } = Typography;
 import { features } from "@utils/features";
 import {
-  Container,
   FeatureCard,
   FeatureDescription,
   FeatureTitle,

@@ -8,12 +8,6 @@ export const StyledWhyChooseSection = styled.section`
   color: #ffffff;
 `;
 
-export const Container = styled.div`
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 16px;
-`;
-
 export const SectionHeader = styled.div`
   text-align: center;
   margin-bottom: 48px;
@@ -29,8 +23,6 @@ export const SectionDescription = styled(Paragraph)`
   &.ant-typography {
     color: #ffffff;
     font-size: 18px;
-    // opacity: 0.9;
-    // margin-bottom: 0;
   }
 `;
 
@@ -52,27 +44,15 @@ export const IconWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto 16px;
-
-//   .anticon {
-//     font-size: 32px;
-//     color: #ffffff;
-//   }
 `;
 
 export const FeatureTitle = styled(Title)`
   &.ant-typography {
     color: #ffffff;
     font-size: 18px;
-    // font-weight: 600;
   }
 `;
 
 export const FeatureDescription = styled(Paragraph)`
-color: #ffffff;
-//   &.ant-typography {
-//     // color: #ffffff;
-//     // opacity: 0.9;
-//     // margin-bottom: 0;
-//     // font-size: 14px;
-//   }
+  color: #ffffff;
 `;

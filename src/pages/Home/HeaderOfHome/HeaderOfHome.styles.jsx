@@ -2,9 +2,6 @@ import styled from "styled-components";
 import { Button, Row, Col, Typography, Card as AntCard } from "antd";
 const { Title, Text, Paragraph } = Typography;
 
-
-
-
 export const HeroSection = styled.section`
   position: relative;
   overflow: hidden;
@@ -17,12 +14,10 @@ export const HeroSection = styled.section`
 `;
 export const BackgroundImage = styled.img`
   position: absolute;
-  // inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  // z-index: 0;
 
   @media (min-width: 768px) {
     object-position: bottom;
@@ -42,10 +37,7 @@ export const Overlay = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  // position: relative;
   z-index: 2;
-  // max-width: 900px;
-  // margin: 0 auto;
   padding: 8rem 2rem;
   text-align: center;
 `;
