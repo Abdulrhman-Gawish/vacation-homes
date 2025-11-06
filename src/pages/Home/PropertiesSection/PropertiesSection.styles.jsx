@@ -37,8 +37,6 @@ export const PropertyCard = styled(AntCard)`
 
 export const ImageWrapper = styled.div`
   aspect-ratio: 4/3;
-  // overflow: hidden;
-  // background-color: #f5f5f5;
 `;
 
 export const PropertyImage = styled.img`

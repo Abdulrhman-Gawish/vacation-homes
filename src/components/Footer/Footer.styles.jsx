@@ -71,8 +71,6 @@ export const SectionTitle = styled.h3`
 
 export const LinkList = styled.ul`
   list-style: none;
-//   padding: 0;
-//   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -99,9 +97,6 @@ export const ContactInfo = styled.div`
   font-size: 14px;
   color: #8c8c8c;
 
-//   p {
-//     margin: 0;
-//   }
 `;
 
 export const SocialIcons = styled.div`
