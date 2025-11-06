@@ -11,8 +11,6 @@ export const TouchSection = styled.section`
 `;
 
 export const Container = styled.div`
-//   max-width: 1200px;
-//   margin: 0 auto;
   padding: 0 16px;
   text-align: center;
 `;
@@ -20,7 +18,7 @@ export const Container = styled.div`
 export const MainTitle = styled(Title)`
   &.ant-typography {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 2.5rem;
     margin-bottom: 16px;
     font-weight: 700;
   }
@@ -29,8 +27,10 @@ export const MainTitle = styled(Title)`
 export const SubTitle = styled(Paragraph)`
   &.ant-typography {
     color: #ffffff;
-    font-size: 18px;
-    // opacity: 0.9;
-    margin-bottom: 0;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
   }
 `;

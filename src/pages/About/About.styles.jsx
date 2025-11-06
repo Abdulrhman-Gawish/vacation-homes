@@ -45,14 +45,18 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 `;
 
 export const HeroSubtitle = styled.p`
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const Section = styled.section`

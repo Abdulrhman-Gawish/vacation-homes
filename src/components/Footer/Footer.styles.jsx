@@ -4,9 +4,6 @@ export const FooterContainer = styled.footer`
   background-color: #001529;
   color: #fff;
   padding: 48px 0 24px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
 `;
 
 export const FooterContent = styled.div`
