@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { Button, Row, Col, Typography, Card as AntCard } from "antd";
-const { Title, Text, Paragraph } = Typography;
+import { Button, Card as AntCard } from "antd";
 
 export const HeroSection = styled.section`
   position: relative;

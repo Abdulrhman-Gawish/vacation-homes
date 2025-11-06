@@ -17,7 +17,6 @@ const Map = () => {
             height="100%"
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
             title="Dubai Location Map"
           />
         </MapContainer>

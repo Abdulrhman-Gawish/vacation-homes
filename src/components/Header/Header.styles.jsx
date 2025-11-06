@@ -7,9 +7,6 @@ export const HeaderWrapper = styled.header`
   z-index: 50;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
 `;
 
 export const InnerContainer = styled.div`
@@ -106,7 +103,7 @@ export const NavButton = styled.button`
 
   &:hover {
     color: #2563eb;
-  } 
+  }
 `;
 
 export const MobileNav = styled.div`
