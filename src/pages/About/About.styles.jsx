@@ -4,27 +4,16 @@ import { motion } from "framer-motion";
 const PrimaryBlue = "#2563EB";
 const LightBlue = "#DBEAFE";
 
-export const AboutContainer = styled.div`
-  min-height: 100vh;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-`;
-
 export const HeroWrapper = styled.section`
   position: relative;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 `;
 
-export const HeroBackground = styled.div`
+export const BackgroundImage = styled.img`
   position: absolute;
-  inset: 0;
-  background-image: url("https://images.unsplash.com/photo-1683770997177-0603bd44d070?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBvZmZpY2UlMjB0ZWFtfGVufDF8fHx8MTc2MTk3NTk2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral");
-  background-size: cover;
-  background-position: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -33,11 +22,10 @@ export const HeroBackground = styled.div`
 export const HeroOverlay = styled.div`
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 `;
 
 export const HeroContent = styled.div`
-  position: relative;
   z-index: 10;
   text-align: center;
   color: #fff;
@@ -55,7 +43,7 @@ export const HeroSubtitle = styled.p`
   margin-bottom: 2rem;
 
   @media (min-width: 768px) {
-    font-size: 1.25rem;
+    font-size: 1.25rem; 
   }
 `;
 
@@ -124,10 +112,6 @@ export const MissionCard = styled(motion.div)`
   font-weight: 400;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 `;
 
 export const CardHeader = styled.div`
@@ -142,8 +126,6 @@ export const IconWrapper = styled.div`
   border-radius: 9999px;
   padding: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
 
   svg {
     color: ${PrimaryBlue};
@@ -155,7 +137,6 @@ export const IconWrapper = styled.div`
 export const CardTitle = styled.h2`
   font-size: 1.875rem;
   font-weight: 400;
-  color: #1f2937;
 `;
 
 export const CardText = styled.p`
@@ -215,7 +196,7 @@ export const ValueDescription = styled.p`
 export const StatsWrapper = styled.section`
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: ${PrimaryBlue};
+  background-color: #1890ff;
   color: #fff;
   font-weight: 400;
 `;

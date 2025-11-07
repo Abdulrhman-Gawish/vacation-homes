@@ -1,15 +1,15 @@
 import {
   HeroWrapper,
-  HeroBackground,
   HeroOverlay,
   HeroContent,
   HeroTitle,
   HeroSubtitle,
+  BackgroundImage
 } from "@pages/About/About.styles";
-
+import about from "@assets/about.jpg";
 const HeroSection = () => (
   <HeroWrapper>
-    <HeroBackground />
+    <BackgroundImage src={about} alt="about"/>
     <HeroOverlay />
 
     <HeroContent>
