@@ -33,7 +33,7 @@ const ContactForm = () => {
         setResult("Message sent successfully!");
         form.resetFields();
       } else {
-        setResult("Something went wrong. Please try again.");
+        setResult("⚠️ Something went wrong. Please try again.");
       }
     } catch (error) {
       setResult("Network error. Please try again later.");
@@ -59,7 +59,14 @@ const ContactForm = () => {
           <Form.Item
             label="Full Name"
             name="name"
-            rules={[{ required: true, message: "Please enter your name" }]}
+            rules={[
+              { required: true, message: "Please enter your full name" },
+              {
+                pattern: /^[A-Za-z\s]{3,50}$/,
+                message:
+                  "Name should contain only letters and spaces (3–50 chars)",
+              },
+            ]}
           >
             <StyledInput placeholder="John Doe" size="large" />
           </Form.Item>
@@ -69,7 +76,10 @@ const ContactForm = () => {
             name="email"
             rules={[
               { required: true, message: "Please enter your email" },
-              { type: "email", message: "Please enter a valid email" },
+              {
+                type: "email",
+                message: "Please enter a valid email address",
+              },
             ]}
           >
             <StyledInput placeholder="john@example.com" size="large" />
@@ -80,6 +90,11 @@ const ContactForm = () => {
             name="phone"
             rules={[
               { required: true, message: "Please enter your phone number" },
+              {
+                pattern: /^\+?\d{7,15}$/,
+                message:
+                  "Please enter a valid phone number (e.g., +971501234567)",
+              },
             ]}
           >
             <StyledInput placeholder="+971 XX XXX XXXX" size="large" />
@@ -88,7 +103,13 @@ const ContactForm = () => {
           <Form.Item
             label="Message"
             name="message"
-            rules={[{ required: true, message: "Please enter your message" }]}
+            rules={[
+              { required: true, message: "Please enter your message" },
+              {
+                min: 10,
+                message: "Message should be at least 10 characters long",
+              },
+            ]}
           >
             <StyledTextArea
               placeholder="Tell us about your property requirements..."
@@ -100,7 +121,16 @@ const ContactForm = () => {
             <SubmitButton type="primary" htmlType="submit">
               Send Message
             </SubmitButton>
-            {result && <p style={{ marginTop: "10px" }}>{result}</p>}
+            {result && (
+              <p
+                style={{
+                  marginTop: "10px",
+                  color: result ? "green" : "red",
+                }}
+              >
+                {result}
+              </p>
+            )}
           </Form.Item>
         </StyledForm>
       </StyledCard>

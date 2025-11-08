@@ -49,7 +49,7 @@ export default function Header() {
               {tabs.map((tab) => (
                 <NavButton
                   key={tab.id}
-                  active={isTabActive(tab.path)}
+                  $active={isTabActive(tab.path)}
                   onClick={() => handleTabClick(tab.path)}
                 >
                   {tab.label}
@@ -61,7 +61,7 @@ export default function Header() {
               {tabs.map((tab) => (
                 <MobileButton
                   key={tab.id}
-                  active={isTabActive(tab.path)}
+                  $active={isTabActive(tab.path)}
                   onClick={() => handleTabClick(tab.path)}
                 >
                   {tab.label}

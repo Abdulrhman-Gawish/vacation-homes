@@ -97,9 +97,9 @@ export const NavButton = styled.button`
   font-weight: 400;
   font-family: inherit;
 
-  color: ${({ active }) => (active ? "#2563eb" : "#4b5563")};
-  border-bottom: ${({ active }) =>
-    active ? "2px solid #2563eb" : "2px solid transparent"};
+  color: ${({ $active }) => ($active ? "#2563eb" : "#4b5563")};
+  border-bottom: ${({ $active }) =>
+    $active ? "2px solid #2563eb" : "2px solid transparent"};
 
   &:hover {
     color: #2563eb;
@@ -126,10 +126,12 @@ export const MobileButton = styled.button`
   font-weight: 400;
   white-space: nowrap;
 
-  color: ${({ active }) => (active ? "#ffffff" : "#4b5563")};
-  background-color: ${({ active }) => (active ? "#2563eb" : "transparent")};
+  color: ${({ $active }) => ($active ? "#ffffff" : "#4b5563")};
+  background-color: ${({ $active }) =>
+    $active ? "#2563eb" : "transparent"};
 
   &:hover {
-    background-color: ${({ active }) => (active ? "#1d4ed8" : "#f3f4f6")};
+    background-color: ${({ $active }) =>
+      $active ? "#1d4ed8" : "#f3f4f6"};
   }
 `;

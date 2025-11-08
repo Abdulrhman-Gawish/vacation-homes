@@ -1,9 +1,9 @@
-import HeroSection from "@pages/About/sections/HeroSection";
-import StorySection from "@pages/About/sections/StorySection";
-import MissionVisionSection from "@pages/About/sections/MissionVisionSection";
-import ValuesSection from "@pages/About/sections/ValuesSection";
-import StatsSection from "@pages/About/sections/StatsSection";
-import WhyChooseUsSection from "@pages/About/sections/WhyChooseUsSection";
+import HeroSection from "@pages/About/HeroSection/HeroSection";
+import StorySection from "@pages/About/StorySection/StorySection";
+import MissionVisionSection from "@pages/About/MissionVisionSection/MissionVisionSection";
+import ValuesSection from "@pages/About/ValuesSection/ValuesSection";
+import StatsSection from "@pages/About/StatsSection/StatsSection";
+import WhyChooseUsSection from "@pages/About/WhyChooseUsSection/WhyChooseUsSection";
 
 function About() {
   return (
