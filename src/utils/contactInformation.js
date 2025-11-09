@@ -3,7 +3,7 @@ export const contactInformation = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    details: ['Sheikh Zayed Road', 'Dubai, United Arab Emirates'],
+    details: ['DIC, Saih Shuaib 3, bld.WHP2-block A, office.P2AG-K13', 'Dubai, United Arab Emirates'],
   },
   {
     icon: Phone,
