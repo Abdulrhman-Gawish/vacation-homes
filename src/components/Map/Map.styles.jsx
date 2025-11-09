@@ -10,8 +10,8 @@ export const StyledCard = styled(motion.div)`
   height: 100%;
 `;
 export const SectionTitle = styled.h2`
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   color: #262626;
   margin-bottom: 32px;
 `;

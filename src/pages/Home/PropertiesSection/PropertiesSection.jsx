@@ -1,29 +1,84 @@
-import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Typography } from "antd";
 import {
-  ButtonWrapper,
-  Container,
-  ImageWrapper,
   StyledPropertiesSection,
-  PropertyCard,
-  PropertyDetails,
-  PropertyImage,
-  PropertyLocation,
-  PropertyPrice,
-  PropertyTitle,
-  SectionDescription,
+  Container,
   SectionHeader,
-  ViewAllButton,
+  SectionDescription,
+  PropertiesScrollContainer,
 } from "./PropertiesSection.styles";
-import { Row, Col, Typography } from "antd";
-const { Title } = Typography;
+import PropertiesList from "./PropertiesList";
 import { properties } from "@utils/properties";
-const PropertiesSection = () => {
-  const navigate = useNavigate();
 
-  const onNavigate = (path) => {
-    if (path === "contact") navigate("/contact");
-    if (path === "about") navigate("/about");
-  };
+const { Title } = Typography;
+
+const PropertiesSection = () => {
+  const scrollRef = useRef(null);
+  const isUserInteractingRef = useRef(false);
+  const resumeTimeoutRef = useRef(null);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    const scrollStep = 0.8;
+    const intervalMs = 16;
+
+    const tick = () => {
+      if (!scrollContainer || isUserInteractingRef.current || !isAutoScrolling) return;
+
+      scrollContainer.scrollLeft += scrollStep;
+      const halfWidth = scrollContainer.scrollWidth / 2;
+      if (scrollContainer.scrollLeft >= halfWidth) {
+        scrollContainer.scrollLeft -= halfWidth;
+      }
+    };
+
+    const intervalId = setInterval(tick, intervalMs);
+    return () => clearInterval(intervalId);
+  }, [isAutoScrolling]);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    const pauseDuration = 1500;
+
+    const userInteracted = () => {
+      isUserInteractingRef.current = true;
+      setIsAutoScrolling(false);
+
+      if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+
+      resumeTimeoutRef.current = setTimeout(() => {
+        isUserInteractingRef.current = false;
+        setIsAutoScrolling(true);
+        resumeTimeoutRef.current = null;
+      }, pauseDuration);
+    };
+
+    scrollContainer.addEventListener("wheel", userInteracted, { passive: true });
+    scrollContainer.addEventListener("touchstart", userInteracted, { passive: true });
+    scrollContainer.addEventListener("pointerdown", userInteracted, { passive: true });
+
+    const keyHandler = (e) => {
+      const keys = ["ArrowLeft", "ArrowRight", "PageUp", "PageDown", "Home", "End", " "];
+      if (keys.includes(e.key)) userInteracted();
+    };
+    window.addEventListener("keydown", keyHandler);
+
+    return () => {
+      scrollContainer.removeEventListener("wheel", userInteracted);
+      scrollContainer.removeEventListener("touchstart", userInteracted);
+      scrollContainer.removeEventListener("pointerdown", userInteracted);
+      window.removeEventListener("keydown", keyHandler);
+      if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+    };
+  }, []);
+
+  const doubled = [...properties, ...properties];
+
   return (
     <StyledPropertiesSection>
       <Container>
@@ -34,48 +89,12 @@ const PropertiesSection = () => {
           </SectionDescription>
         </SectionHeader>
 
-        <Row gutter={[32, 32]}>
-          {properties.map((property) => (
-            <Col key={property.id} xs={24} md={12} lg={8}>
-              <PropertyCard>
-                <ImageWrapper>
-                  <PropertyImage
-                    src={property.image}
-                    alt={property.title}
-                    onError={(e) => {
-                      e.target.src =
-                        "https://via.placeholder.com/400x300?text=Property+Image";
-                    }}
-                  />
-                </ImageWrapper>
-                <div>
-                  <PropertyPrice level={3}>{property.price}</PropertyPrice>
-                  <PropertyTitle level={4}>{property.title}</PropertyTitle>
-                  <PropertyLocation>{property.location}</PropertyLocation>
-                  <PropertyDetails>
-                    <span>{property.beds} Beds</span>
-                    <span></span>
-                    <span>{property.baths} Baths</span>
-                    <span></span>
-                    <span>{property.sqft} sq ft</span>
-                  </PropertyDetails>
-                </div>
-              </PropertyCard>
-            </Col>
-          ))}
-        </Row>
-
-        <ButtonWrapper>
-          <ViewAllButton
-            type="primary"
-            size="large"
-            onClick={() => onNavigate("contact")}
-          >
-            View All Properties
-          </ViewAllButton>
-        </ButtonWrapper>
+        <PropertiesScrollContainer ref={scrollRef}>
+          <PropertiesList properties={doubled} />
+        </PropertiesScrollContainer>
       </Container>
     </StyledPropertiesSection>
   );
 };
+
 export default PropertiesSection;
