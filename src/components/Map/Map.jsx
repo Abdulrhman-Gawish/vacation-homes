@@ -9,10 +9,12 @@ const Map = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true, margin: "-100px" }}
       >
-        <SectionTitle>Sheikh Zayed Road, Dubai, UAE</SectionTitle>
+        <SectionTitle>
+          DIC, Saih Shuaib 3, bld.WHP2-block A, office.P2AG-K13, Dubai, UAE
+        </SectionTitle>
         <MapContainer>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9420151945615!2d55.134505675159176!3d25.0699543777931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f13435f3abe57%3A0xb4c00b9d46311cd0!2sSheikh%20Zayed%20Rd%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2seg!4v1762117878267!5m2!1sen!2seg"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4416.699295548979!2d55.06006397537079!3d24.86074897792916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDUxJzM4LjciTiA1NcKwMDMnNDUuNSJF!5e1!3m2!1sen!2seg!4v1762698767046!5m2!1sen!2seg"
             width="100%"
             height="100%"
             allowFullScreen
