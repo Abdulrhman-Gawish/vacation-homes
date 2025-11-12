@@ -1,52 +1,72 @@
+import jbr from "@assets/jbr.jpg";
+import businessBbay from "@assets/business-bay.jpg";
+import downTown from "@assets/down-town.jpg";
+import dubaiMarina from "@assets/dubai-marina.jpg";
+import jlt from "@assets/jlt.jpg";
+import palmJumeirah from "@assets/palm-jumeirah.jpg";
+import jumeirahVillage from "@assets/jumeirah-village-circle.jpg";
+import greens from "@assets/greens.jpg";
+import barsha from "@assets/barsha-leights.jpg";
+import sports from "@assets/sports.jpg";
 export const properties = [
-    {
-      id: 1,
-      title: "Luxury Waterfront Villa",
-      location: "Palm Jumeirah",
-      price: "AED 25,000,000",
-      beds: 6,
-      baths: 7,
-      sqft: "8,500",
-      image: "https://images.unsplash.com/photo-1702267292528-085187ed3bcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB2aWxsYSUyMHBvb2x8ZW58MXx8fHwxNzYxOTg0NzYyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    },
-    {
-      id: 2,
-      title: "Modern Penthouse",
-      location: "Downtown Dubai",
-      price: "AED 18,500,000",
-      beds: 4,
-      baths: 5,
-      sqft: "6,200",
-      image: "https://images.unsplash.com/photo-1743819458014-f5cf74f175e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBEdWJhaSUyMHByb3BlcnR5fGVufDF8fHx8MTc2MTkwNzcyOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    },
-    {
-      id: 3,
-      title: "Executive Apartment",
-      location: "Dubai Marina",
-      price: "AED 8,900,000",
-      beds: 3,
-      baths: 4,
-      sqft: "3,800",
-      image: "https://images.unsplash.com/photo-1638454668466-e8dbd5462f20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjE5Nzc3ODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    },
-    {
-      id: 4,
-      title: "Executive Apartment",
-      location: "Dubai Marina",
-      price: "AED 8,900,000",
-      beds: 3,
-      baths: 4,
-      sqft: "3,800",
-      image: "https://images.unsplash.com/photo-1638454668466-e8dbd5462f20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjE5Nzc3ODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    },
-    {
-      id: 5,
-      title: "Executive Apartment",
-      location: "Dubai Marina",
-      price: "AED 8,900,000",
-      beds: 3,
-      baths: 4,
-      sqft: "3,800",
-      image: "https://images.unsplash.com/photo-1638454668466-e8dbd5462f20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjE5Nzc3ODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    },
-  ];
+  {
+    id: 1,
+    title: "Luxury Waterfront Villa",
+    location: "Palm Jumeirah",
+    image: palmJumeirah,
+  },
+  {
+    id: 2,
+    title: "Modern Penthouse",
+    location: "Downtown Dubai",
+    image: downTown,
+  },
+  {
+    id: 3,
+    title: "Executive Apartment",
+    location: "Dubai Marina",
+    image: dubaiMarina,
+  },
+  {
+    id: 4,
+    title: "Skyline View Apartment",
+    location: "JLT",
+    image: jlt,
+  },
+  {
+    id: 5,
+    title: "Urban Elite Residence",
+    location: "JBR",
+    image: jbr,
+  },
+  {
+    id: 6,
+    title: "Beachfront Luxury Residence",
+    location: "Business Bay",
+    image: businessBbay,
+  },
+  {
+    id: 7,
+    title: "High standard Studios",
+    location: "Jumeirah village circle",
+    image: jumeirahVillage,
+  },
+  {
+    id: 8,
+    title: "Luxurious Multi- Beds Apartments",
+    location: "The Greens",
+    image: greens,
+  },
+  {
+    id: 9,
+    title: "Unique standard and master Rooms",
+    location: "Al barsha Heights ",
+    image: barsha,
+  },
+  {
+    id: 10,
+    title: "Dynamic blend of comfort, activity and modern living",
+    location: "Sports City",
+    image: sports,
+  },
+];

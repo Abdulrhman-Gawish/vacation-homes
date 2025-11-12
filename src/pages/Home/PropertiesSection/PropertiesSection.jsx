@@ -49,16 +49,8 @@ const PropertiesSection = () => {
                   />
                 </ImageWrapper>
                 <div>
-                  <PropertyPrice level={3}>{property.price}</PropertyPrice>
                   <PropertyTitle level={4}>{property.title}</PropertyTitle>
                   <PropertyLocation>{property.location}</PropertyLocation>
-                  <PropertyDetails>
-                    <span>{property.beds} Beds</span>
-                    <span></span>
-                    <span>{property.baths} Baths</span>
-                    <span></span>
-                    <span>{property.sqft} sq ft</span>
-                  </PropertyDetails>
                 </div>
               </PropertyCard>
             </Col>
