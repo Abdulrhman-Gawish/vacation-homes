@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, Row, Col, Typography, Card as AntCard } from "antd";
+import { Button, Typography, Card as AntCard } from "antd";
 const { Title, Text, Paragraph } = Typography;
 
 export const StyledPropertiesSection = styled.section`
@@ -59,6 +59,7 @@ export const PropertyPrice = styled(Title)`
 
 export const PropertyTitle = styled(Title)`
   &.ant-typography {
+    margin-top: 10px;
     font-size: 18px;
   }
 `;
