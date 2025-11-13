@@ -20,8 +20,8 @@ const FooterBrand = () => (
     <Description>
       Sandy Beach Vacation Homes™ Rental LLC is a DET licensed Operator managing
       vacation rental apartments for short term stay in Dubai. With a handpicked
-      collection of properties, our guests will enjoy Beach Days City Nights all
-      in one stay
+      collection of properties, our guests will enjoy Beach Days, City Nights _
+      all in one stay.
     </Description>
   </div>
 );
