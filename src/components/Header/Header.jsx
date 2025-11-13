@@ -40,7 +40,7 @@ export default function Header() {
             <Icon />
             <TitleWrapper>
               <Title>Sandy Beach Vacation Homes Rental</Title>
-              <Subtitle>Luxury Beachfront Properties</Subtitle>
+              <Subtitle>The Gateway to Elegant Escapes</Subtitle>
             </TitleWrapper>
           </Wrapper>
 
