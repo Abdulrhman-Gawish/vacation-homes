@@ -68,7 +68,7 @@ const ContactForm = () => {
               },
             ]}
           >
-            <StyledInput placeholder="John Doe" size="large" />
+            <StyledInput size="large" />
           </Form.Item>
 
           <Form.Item
@@ -82,7 +82,7 @@ const ContactForm = () => {
               },
             ]}
           >
-            <StyledInput placeholder="john@example.com" size="large" />
+            <StyledInput size="large" />
           </Form.Item>
 
           <Form.Item
@@ -97,7 +97,7 @@ const ContactForm = () => {
               },
             ]}
           >
-            <StyledInput placeholder="+971 XX XXX XXXX" size="large" />
+            <StyledInput size="large" />
           </Form.Item>
 
           <Form.Item
@@ -111,10 +111,7 @@ const ContactForm = () => {
               },
             ]}
           >
-            <StyledTextArea
-              placeholder="Tell us about your property requirements..."
-              rows={6}
-            />
+            <StyledTextArea rows={6} />
           </Form.Item>
 
           <Form.Item>

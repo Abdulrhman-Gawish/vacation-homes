@@ -19,7 +19,7 @@ const Map = () => {
             height="100%"
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url"
+            referrerPolicy="no-referrer-when-downgrade"
             title="Dubai Location Map"
           />
         </MapContainer>
