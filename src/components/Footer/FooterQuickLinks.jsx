@@ -13,7 +13,7 @@ const FooterQuickLinks = () => {
 
   return (
     <div>
-      <SectionTitle>Quick Links</SectionTitle>
+      <SectionTitle>Company</SectionTitle>
       <LinkList>
         <LinkItem onClick={() => handleNavigation("/")}>Home</LinkItem>
         <LinkItem onClick={() => handleNavigation("/about")}>About Us</LinkItem>
