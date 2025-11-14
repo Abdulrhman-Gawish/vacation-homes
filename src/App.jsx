@@ -5,6 +5,9 @@ import Footer from "@components/Footer/Footer";
 import Home from "@pages/Home/Home";
 import About from "@pages/About/About";
 import Contact from "@pages/Contact/Contact";
+import TermsAndConditions from "@pages/Common/TermsAndConditions";
+import GuestFAQs from "@pages/Common/GuestFAQs";
+import LandlordFAQs from "./pages/Common/LandlordFAQs";
 import ScrollToTop from "@components/ScrollToTop";
 import { AppWrapper } from "@utils/AppWrapper";
 
@@ -19,6 +22,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/terms-and-conditions"
+            element={<TermsAndConditions />}
+          />
+          <Route path="/guest-faqs" element={<GuestFAQs />} />
+          <Route path="/landlord-faqs" element={<LandlordFAQs />} />
         </Routes>
         {/* </main> */}
         <Footer />
