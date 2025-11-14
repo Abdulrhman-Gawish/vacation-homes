@@ -14,7 +14,7 @@ const FooterBrand = () => (
       <Building2 />
       <BrandText>
         <BrandName>Sandy Beach Vacation Homes</BrandName>
-        <BrandSubtitle>Luxury Real Estate</BrandSubtitle>
+        <BrandSubtitle>Enjoy your Beach Days, City Nights _ all in One Stay</BrandSubtitle>
       </BrandText>
     </BrandContainer>
     <Description>

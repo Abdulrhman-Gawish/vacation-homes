@@ -18,6 +18,8 @@ const FooterQuickLinks = () => {
         <LinkItem onClick={() => handleNavigation("/")}>Home</LinkItem>
         <LinkItem onClick={() => handleNavigation("/about")}>About Us</LinkItem>
         <LinkItem onClick={() => handleNavigation("/contact")}>Contact</LinkItem>
+        <LinkItem onClick={() => handleNavigation("/landlord-faqs")}>Landlord's FAQs</LinkItem>
+        <LinkItem onClick={() => handleNavigation("/guest-faqs")}>Guest FAQs</LinkItem>
       </LinkList>
     </div>
   );
