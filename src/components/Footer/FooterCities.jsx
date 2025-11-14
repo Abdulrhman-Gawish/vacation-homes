@@ -6,8 +6,6 @@ const FooterCities = () => (
     <SectionTitle>Cities</SectionTitle>
     <LinkList>
       <LinkItem><a href="#">Dubai</a></LinkItem>
-      <LinkItem><a href="#">Fujairah</a></LinkItem>
-      <LinkItem><a href="#">Abu Dhabi</a></LinkItem>
       <LinkItem><a href="#">Sharjah</a></LinkItem>
     </LinkList>
   </div>

@@ -12,7 +12,7 @@ const FooterContact = () => (
   <div>
     <SectionTitle>Contact Us</SectionTitle>
     <ContactInfo>
-      <p>DIC, Saih Shuaib 3, bld.WHP2-block A, office.P2AG-K13, Dubai</p>
+      <p>DIC, Saih Shuaib 3, WHP2-block A, office.P2AG-K13, Dubai</p>
       <p>
         {" "}
         <a
