@@ -28,9 +28,11 @@ const HeaderOfHome = () => {
 
       <Row>
         <ContentWrapper>
-          <HeroTitle>Discover Your Dream Property in Dubai</HeroTitle>
+          <HeroTitle>
+            Discover your Prime Short Stay in the Heart of UAE within Dubai
+          </HeroTitle>
           <HeroSubtitle>
-            Premium real estate solutions in the heart of the UAE
+            Enjoy your Beach Days, City Nights _ all in One Stay
           </HeroSubtitle>
 
           <ButtonGroup>
