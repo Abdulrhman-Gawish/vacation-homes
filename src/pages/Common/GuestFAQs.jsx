@@ -1,4 +1,3 @@
-// src/pages/Common/GuestFAQs.jsx
 import React from "react";
 import {
   TermsPage,
@@ -11,7 +10,7 @@ import {
   List,
   ListItem,
   StrongText,
-} from "./Common.styles.jsx"; // استيراد الأنماط من ملف Common.styles.jsx
+} from "./Common.styles.jsx";
 
 const GuestFAQs = () => {
   return (
