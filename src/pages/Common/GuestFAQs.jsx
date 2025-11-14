@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useState, } from "react";
 import {
   TermsPage,
   TermsContainer,
   TermsHeader,
   HeaderTitle,
   HeaderText,
-  Section,
-  SectionTitle,
-  List,
+  
   ListItem,
-  StrongText,
+
 } from "./Common.styles.jsx";
+import { ChevronIcon , AccordionItem} from "@components/Shared-Components/SharedComponents.jsx";
+
+
+<ChevronIcon />;
+<AccordionItem />;
+
+
 
 const GuestFAQs = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggle = (index) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
     <TermsPage>
       <TermsContainer>
@@ -25,140 +36,110 @@ const GuestFAQs = () => {
           </HeaderText>
         </TermsHeader>
 
-        <Section>
-          <SectionTitle>
-            +What are the accepted methods of payment?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              We accept the following methods of payment:
-              <ul>
-                <li>
-                  Debit or credit cards through our online payment portal or POS
-                  terminals.
-                </li>
-                <li>Bank transfers.</li>
-                <li>Cash.</li>
-              </ul>
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={0}
+          title="What payment methods are accepted?"
+          isOpen={openIndex === 0}
+          onToggle={toggle}
+        >
+          <ListItem>
+            Debit or credit cards through our online payment portal or POS
+            terminals.
+          </ListItem>
+          <ListItem>Bank transfers.</ListItem>
+          <ListItem>Cash.</ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>+Is there parking available?</SectionTitle>
-          <List>
-            <ListItem>
-              Yes, all of our accommodations have car parking. The number of
-              parking spaces typically corresponds to the unit size. If you
-              require additional parking space, our guest support team can
-              assist you, with possible additional charges applicable.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={1}
+          title="Is parking available?"
+          isOpen={openIndex === 1}
+          onToggle={toggle}
+        >
+          <ListItem>
+            Yes, all our accommodations include parking facilities. The number
+            of available parking spaces typically depends on the unit size.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>+Do you offer Wi-Fi?</SectionTitle>
-          <List>
-            <ListItem>
-              Yes, complimentary Wi-Fi is available throughout the stay premises
-              for all guests.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={2}
+          title="Do you offer Wi-Fi?"
+          isOpen={openIndex === 2}
+          onToggle={toggle}
+        >
+          <ListItem>
+            Yes, complimentary high-speed Wi-Fi is available throughout all our
+            properties.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>+Are pets allowed?</SectionTitle>
-          <List>
-            <ListItem>
-              We understand that pets are part of the family! Please note that
-              only specific units in our inventory accept pets.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={3}
+          title="Are pets allowed?"
+          isOpen={openIndex === 3}
+          onToggle={toggle}
+        >
+          <ListItem>
+            Pets are allowed only in selected units. Please contact us before
+            booking to confirm pet-friendly availability.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>
-            +Are there any facilities or amenities available for guests to use?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              Our properties are fully equipped and furnished, providing
-              amenities such as complimentary WiFi, kitchen appliances,
-              toiletries, central air conditioning, and more.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={4}
+          title="What facilities and amenities are available for guests?"
+          isOpen={openIndex === 4}
+          onToggle={toggle}
+        >
+          <ListItem>
+            Amenities include complimentary Wi-Fi, kitchen appliances,
+            toiletries, central AC, and more.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>
-            +Is there a shuttle/cab service to nearby attractions or the
-            airport?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              While we don’t offer a dedicated shuttle/cab service, many of our
-              properties are conveniently located near public transportation
-              options. Guests can utilize popular ride-sharing services such as
-              Careem, Uber.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={5}
+          title="Is there a shuttle or cab service to nearby attractions or the airport?"
+          isOpen={openIndex === 5}
+          onToggle={toggle}
+        >
+          <ListItem>
+            We do not provide shuttle service, but properties are near public
+            transportation and ride-sharing options.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>
-            +What are the dining options available on-site or nearby?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              For dining options, you can explore dine-in or food delivery
-              services available nearby. You can use the following options when
-              staying at any of our properties in Dubai:
-              <ul>
-                <li>
-                  InstaShop: Offers fast grocery delivery to your doorstep.
-                </li>
-                <li>
-                  Talabat: Provides a variety of food delivery and dine-in
-                  options from various restaurants.
-                </li>
-                <li>
-                  Deliveroo: Order food from a selection of restaurants with
-                  Deliveroo.
-                </li>
-                <li>
-                  Careem: Careem food delivery service is also available
-                  throughout the country.
-                </li>
-              </ul>
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={6}
+          title="What dining options are available on-site or nearby?"
+          isOpen={openIndex === 6}
+          onToggle={toggle}
+        >
+          <ListItem>
+            Popular apps: InstaShop, Talabat, Deliveroo, Careem Food.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>
-            +How do I contact the guest support for assistance during my stay?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              To access guest support during your stay, you can reach out to us
-              via our support number that was provided during the booking step
-              until checkout.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={7}
+          title="How can I contact guest support during my stay?"
+          isOpen={openIndex === 7}
+          onToggle={toggle}
+        >
+          <ListItem>
+            You can reach support using the number shared during booking.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>
-            +Are there any additional fees or charges I should be aware of?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              No, there are no hidden charges or additional fees when booking.
-              All charges are transparent and fully outlined. Please feel free
-              to inquire about any additional services you may require.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={8}
+          title="Are there any additional fees I should be aware of?"
+          isOpen={openIndex === 8}
+          onToggle={toggle}
+        >
+          <ListItem>No hidden fees. All charges are transparent.</ListItem>
+        </AccordionItem>
       </TermsContainer>
     </TermsPage>
   );

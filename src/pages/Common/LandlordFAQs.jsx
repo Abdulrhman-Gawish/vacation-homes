@@ -1,88 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   TermsPage,
   TermsContainer,
   TermsHeader,
   HeaderTitle,
   HeaderText,
-  Section,
-  SectionTitle,
-  List,
   ListItem,
-  StrongText,
 } from "./Common.styles.jsx";
+import {
+  ChevronIcon,
+  AccordionItem,
+} from "@components/Shared-Components/SharedComponents.jsx";
+
+<ChevronIcon />;
+<AccordionItem />;
 
 const LandlordFAQs = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+  const toggle = (index) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
     <TermsPage>
       <TermsContainer>
         <TermsHeader>
           <HeaderTitle>Landlord's FAQs</HeaderTitle>
           <HeaderText>
-            Here are some frequently asked questions (FAQs) for landlords. If
-            you need further assistance, feel free to reach out to our support
-            team.
+            Here are some frequently asked questions (FAQs) for landlords.
           </HeaderText>
         </TermsHeader>
 
-        <Section>
-          <SectionTitle>+What is a holiday home?</SectionTitle>
-          <List>
-            <ListItem>
-              As per DTCM: A holiday home is any furnished mainland or
-              freezone-located residence (studio to multiple bedrooms) that is
-              rented out to guests based on the activity terms and criteria.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={0}
+          title="What is a holiday home?"
+          isOpen={openIndex === 0}
+          onToggle={toggle}
+        >
+          <ListItem>
+            A holiday home is any furnished residence rented to guests as per
+            DTCM regulations.
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>
-            +Which documents are required to obtain Permit?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              Copy of individual owner’s passport or UAE ID for individual
-              owners.
-            </ListItem>
-            <ListItem>
-              Submission of proof of authorisation to use the Unit:
-              <ul>
-                <li>Copy of property Title Deed;</li>
-                <li>
-                  Authorisation from the owner, using the approved form from
-                  DTCM (if the property owner is a legal person, i.e. a company,
-                  an authorised signatory can sign the form on the condition
-                  that proof of his authorisation is also submitted);
-                </li>
-                <li>
-                  A bill issued for the Unit by Dubai Electricity and Water
-                  Authority.
-                </li>
-              </ul>
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={1}
+          title="Which documents are required to obtain a permit?"
+          isOpen={openIndex === 1}
+          onToggle={toggle}
+        >
+          <ListItem>Owner’s passport or Emirates ID copy.</ListItem>
+          <ListItem>
+            Proof of authorization:
+            <ul>
+              <li>Property Title Deed</li>
+              <li>DTCM-approved authorization form</li>
+              <li>DEWA bill</li>
+            </ul>
+          </ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>+When am I supposed to receive my payout?</SectionTitle>
-          <List>
-            <ListItem>
-              The payment is to be settled on time as per previous agreement.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={2}
+          title="When will I receive my payout?"
+          isOpen={openIndex === 2}
+          onToggle={toggle}
+        >
+          <ListItem>The payout is settled as per the agreement.</ListItem>
+        </AccordionItem>
 
-        <Section>
-          <SectionTitle>
-            +What shall I do if my bank account details were changed?
-          </SectionTitle>
-          <List>
-            <ListItem>
-              We advise you to immediately send us a written notice.
-            </ListItem>
-          </List>
-        </Section>
+        <AccordionItem
+          id={3}
+          title="What if my bank details change?"
+          isOpen={openIndex === 3}
+          onToggle={toggle}
+        >
+          <ListItem>Please notify us immediately in writing.</ListItem>
+        </AccordionItem>
       </TermsContainer>
     </TermsPage>
   );
