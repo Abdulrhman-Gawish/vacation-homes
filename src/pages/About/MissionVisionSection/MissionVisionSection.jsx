@@ -28,10 +28,10 @@ const MissionVisionSection = () => {
               <CardTitle>Our Mission</CardTitle>
             </CardHeader>
             <CardText>
-              To provide exceptional real estate services by connecting clients
-              with their perfect properties while delivering unparalleled
-              expertise, integrity, and personalized attention throughout every
-              transaction.
+              To deliver reliable, high-quality short-stay rental homes across
+              Dubai’s most desirable neighbourhoods, offering flexible stay
+              options, exceptional guest support, and consistent value for both
+              business and leisure travellers.
             </CardText>
           </MissionCard>
 
@@ -48,9 +48,10 @@ const MissionVisionSection = () => {
               <CardTitle>Our Vision</CardTitle>
             </CardHeader>
             <CardText>
-              To be the most trusted and innovative real estate agency in Dubai,
-              recognized for our commitment to excellence, client satisfaction,
-              and our role in shaping the future of luxury living in the UAE.
+              To become the preferred partner for guests and property owners in
+              Dubai’s short-term stay sector — defined by operational excellence,
+              transparent performance, and a growing portfolio of rentals
+              trusted for comfort, convenience, and integrity.
             </CardText>
           </MissionCard>
         </Grid>

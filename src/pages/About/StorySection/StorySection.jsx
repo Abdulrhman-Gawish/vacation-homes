@@ -13,22 +13,36 @@ const StorySection = () => {
         <StoryContent>
           <div>
             <p>
-              Founded in 2010, Dubai Prime Properties has established itself as
-              one of the leading real estate agencies in the UAE. With over 15
-              years of experience in the Dubai property market, we have helped
-              thousands of clients find their dream homes and investment
-              properties.
+              Sandy Beach Vacation Homes Rental LLC was born from a simple
+              observation: while Dubai offered countless short-stay options,
+              many lacked the consistency, comfort, and hospitality travellers
+              truly deserve. Determined to raise the standard, our founders
+              Gawish Sons launched the company in 2020 with a clear vision — to
+              create reliable, high-quality homes where guests feel genuinely
+              cared for.
             </p>
+
             <p>
-              Our deep understanding of the local market, combined with our
-              commitment to excellence, has made us the go-to choice for both
-              local and international investors looking to make the most of
-              Dubai's dynamic real estate landscape.
+              Today, Sandy Beach is a trusted name in Dubai’s short-stay
+              sector, offering beautifully furnished apartments, villas, and
+              studios across the city’s most desirable neighbourhoods. With a
+              handpicked portfolio of over 100 properties, each home is designed
+              to deliver the perfect balance of comfort and convenience —
+              complete with high-speed WiFi, modern interiors, fully equipped
+              kitchens, and thoughtful, guest-centric amenities.
             </p>
+
             <p>
-              We specialize in luxury residential properties, including villas,
-              penthouses, and apartments in prime locations such as Downtown
-              Dubai, Palm Jumeirah, Dubai Marina, and Emirates Hills.
+              From Downtown and Business Bay to Dubai Marina, JBR, Palm
+              Jumeirah, JLT, JVC, Dubai Land, and Al Barsha Heights, our
+              locations give travellers seamless access to Dubai’s landmarks
+              while providing peaceful spaces to relax and recharge.
+            </p>
+
+            <p>
+              At Sandy Beach, we don’t just offer places to stay — we create
+              memorable experiences shaped around the way you want to live,
+              work, and unwind.
             </p>
           </div>
         </StoryContent>
