@@ -2,22 +2,28 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 export const contactInformation = [
   {
     icon: MapPin,
-    title: 'Visit Us',
-    details: ['DIC, Saih Shuaib 3, bld.WHP2-block A, office.P2AG-K13', 'Dubai, United Arab Emirates'],
+    title: "Visit Us",
+    details: [
+      "DIC, Saih Shuaib 3, bld.WHP2-block A, office.P2AG-K13",
+      "Dubai, United Arab Emirates",
+    ],
   },
   {
     icon: Phone,
-    title: 'Call Us',
-    details: ['+971 4 XXX XXXX', '+971 50 XXX XXXX'],
+    title: "Call Us",
+    details: ["+971 52 652 8978"],
   },
   {
     icon: Mail,
-    title: 'Email Us',
-    details: ['info@dubaiprimeproperties.ae', 'sales@dubaiprimeproperties.ae'],
+    title: "Email Us",
+    details: ["info@dubaiprimeproperties.ae", "sales@dubaiprimeproperties.ae"],
   },
   {
     icon: Clock,
-    title: 'Office Hours',
-    details: ['Sunday - Thursday: 9:00 AM - 6:00 PM', 'Saturday: 10:00 AM - 4:00 PM'],
+    title: "Office Hours",
+    details: [
+      "Sunday - Thursday: 9:00 AM - 6:00 PM",
+      "Saturday: 10:00 AM - 4:00 PM",
+    ],
   },
 ];
