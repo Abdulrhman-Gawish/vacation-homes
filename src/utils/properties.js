@@ -11,27 +11,27 @@ import sports from "@assets/sports.jpg";
 export const properties = [
   {
     id: 1,
-    title: "Luxury Waterfront Villa",
-    location: "Palm Jumeirah",
-    image: palmJumeirah,
-  },
-  {
-    id: 2,
-    title: "Modern Penthouse",
-    location: "Downtown Dubai",
-    image: downTown,
-  },
-  {
-    id: 3,
     title: "Executive Apartment",
     location: "Dubai Marina",
     image: dubaiMarina,
   },
   {
+    id: 2,
+    title: "Beachfront Luxury Residence",
+    location: "Business Bay",
+    image: businessBbay,
+  },
+  {
+    id: 3,
+    title: "Modern Penthouse",
+    location: "Downtown Dubai",
+    image: downTown,
+  },
+  {
     id: 4,
-    title: "Skyline View Apartment",
-    location: "JLT",
-    image: jlt,
+    title: "Luxury Waterfront Villa",
+    location: "Palm Jumeirah",
+    image: palmJumeirah,
   },
   {
     id: 5,
@@ -41,9 +41,9 @@ export const properties = [
   },
   {
     id: 6,
-    title: "Beachfront Luxury Residence",
-    location: "Business Bay",
-    image: businessBbay,
+    title: "Skyline View Apartment",
+    location: "JLT",
+    image: jlt,
   },
   {
     id: 7,

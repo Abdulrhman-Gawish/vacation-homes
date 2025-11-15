@@ -4,17 +4,17 @@ import {
   HeroContent,
   HeroTitle,
   HeroSubtitle,
-  BackgroundImage
+  BackgroundImage,
 } from "./HeroSection.styles";
 import about from "@assets/about.jpg";
 const HeroSection = () => (
   <HeroWrapper>
-    <BackgroundImage src={about} alt="about"/>
+    <BackgroundImage src={about} alt="about" />
     <HeroOverlay />
 
     <HeroContent>
-      <HeroTitle>About Dubai Prime Properties</HeroTitle>
-      <HeroSubtitle>Your Trusted Real Estate Partner Since 2010</HeroSubtitle>
+      <HeroTitle>About Sandy Beach Vacation Homes</HeroTitle>
+      <HeroSubtitle>Your Trusted Partner Since 2020</HeroSubtitle>
     </HeroContent>
   </HeroWrapper>
 );

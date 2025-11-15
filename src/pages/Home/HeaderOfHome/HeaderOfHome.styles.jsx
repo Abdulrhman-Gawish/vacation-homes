@@ -28,8 +28,8 @@ export const Overlay = styled.div`
   inset: 0;
   background: linear-gradient(
     to bottom right,
-    rgba(51, 65, 85, 0.7),
-    rgba(15, 23, 42, 0.85),
+    rgba(51, 65, 85, 0.9),
+    rgba(15, 23, 42, 0.8),
     rgba(2, 6, 23, 0.9)
   );
   z-index: 1;

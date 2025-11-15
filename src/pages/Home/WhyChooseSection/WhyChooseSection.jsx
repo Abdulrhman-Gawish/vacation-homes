@@ -18,10 +18,10 @@ const WhyChooseSection = () => {
       <div>
         <SectionHeader>
           <SectionTitle level={1}>
-            Why Choose Dubai Prime Properties
+            Why Choose Sandy Beach Vacation Homes
           </SectionTitle>
           <SectionDescription>
-            Your trusted partner in Dubai real estate
+            Your trusted partner in Dubai 
           </SectionDescription>
         </SectionHeader>
 
